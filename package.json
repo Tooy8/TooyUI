@@ -1,14 +1,14 @@
 {
   "name": "tooy-ui",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "main": "./dist/tooy-ui.umd.cjs",
   "module": "./dist/tooy-ui.js",
   "exports": {
     ".": {
       "import": "./dist/tooy-ui.js",
-      "require": "./dist/tooy-ui.js"
+      "require": "./dist/tooy-ui.umd.cjs"
     }
   },
   "files": [
@@ -42,7 +42,7 @@
   "dependencies": {
     "sass": "^1.62.1",
     "scss": "^0.2.4",
-    "tooy-ui": "^0.0.3",
+    "tooy-ui": "^0.0.4",
     "vue": "^3.2.47"
   },
   "devDependencies": {
