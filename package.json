@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "tooy-ui": "^0.0.4",
+    "vitepress": "^1.0.0-alpha.74"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
+    "deploy": "deploy.sh"
+  }
+}
