@@ -1,1 +1,0 @@
-import{_ as a,o as e,c as t,O as n}from"./chunks/framework.6f73e628.js";const _=JSON.parse('{"title":"安装","description":"","frontmatter":{},"headers":[],"relativePath":"guild/installation.md"}'),s={name:"guild/installation.md"},o=n("",16),l=[o];function i(r,p,c,h,d,u){return e(),t("div",null,l)}const b=a(s,[["render",i]]);export{_ as __pageData,b as default};
