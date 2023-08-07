@@ -47,7 +47,7 @@ export default {
             h(
                 'div',
                 {
-                    className: 't-space',
+                    className: 'y-space',
                     style: yStyle.value
                 },
                 slotList.value
@@ -58,7 +58,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.t-space {
+.y-space {
     display: inline-flex;
     gap: 10px 10px
 }

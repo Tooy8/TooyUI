@@ -1,7 +1,7 @@
 {
   "name": "tooy-ui",
   "private": false,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "main": "./dist/tooy-ui.umd.cjs",
   "module": "./dist/tooy-ui.js",
@@ -42,7 +42,7 @@
   "dependencies": {
     "sass": "^1.62.1",
     "scss": "^0.2.4",
-    "tooy-ui": "^0.0.4",
+    "tooy-ui": "^0.0.5",
     "vue": "^3.2.47"
   },
   "devDependencies": {

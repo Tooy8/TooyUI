@@ -34,29 +34,50 @@
 
   <!-- space -->
   <div>
-    <y-space>
-      <y-button>123</y-button>
-      <y-button>123</y-button>
-      <y-button>123</y-button>
-      <y-button>123</y-button>
-      <y-button>123</y-button>
-      <y-button>123</y-button>
-      <y-button>123</y-button>
-      <y-button>123</y-button>
-
+    <y-space :inline=true :size='[10, 10]'>
+      <y-button>demo</y-button>
+      <y-button>demo</y-button>
+      <y-button>demo</y-button>
+      <y-button>demo</y-button>
+      <y-button>demo</y-button>
+      <y-button>demo</y-button>
+      <y-button>demo</y-button>
+      <y-button>demo</y-button>
     </y-space>
+  </div>
+
+  <!-- select -->
+  <div>
+    <y-select :options="state.options" filedLabel="name" filedValue="id" placeholder="请选择"></y-select>
+  </div>
+
+  <!-- radio -->
+  <div>
+    <y-radio :options="state.options" filedLabel="name" filedValue="id" @change="change" customColor="#09b63d"
+      :inline=false></y-radio>
+  </div>
+
+  <!-- upload -->
+  <div>
+    <y-upload multiple @change="change" label="上传文件" btnType="success" drag> </y-upload>
   </div>
 </template>
 
 
 
+
 <script setup>
-import { ref } from 'vue'
+import { ref, reactive } from 'vue'
 const val = ref('')
 const val2 = ref('')
 const val3 = ref('')
 const val4 = ref('')
-
+const state = reactive({
+  options: [{ name: "中国", id: 'China', disabled: true }, { name: "美国", id: 'America' }, { name: "韩国", id: 'Korea' }, { name: "俄罗斯", id: 'Russia' },]
+})
+const change = (e) => {
+  console.log(e);
+}
 </script>
 
 <style lang="scss" scoped></style>
